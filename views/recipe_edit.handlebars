@@ -1,0 +1,19 @@
+<h2 class="page-header">Edit Recipe</h2>
+
+
+<form method="post" action="/edit/{{recipe.id}}">
+   <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control"  name="title" value="{{recipe.title}}">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <textarea class="form-control" name="description">{{recipe.description}}</textarea>
+  </div>
+   <div class="form-group">
+    <label>Ingredients</label>
+    <textarea class="form-control"  name="ingredients">{{recipe.ingredients}}</textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+  <a href="/" type="Cancel" class="btn btn-default">Cancel</a>
+</form>
